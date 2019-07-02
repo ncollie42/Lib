@@ -1,7 +1,8 @@
 CC = gcc
-FILES = main.c strlen.c memset.c
+FLAGS = -g
+FILES = main.c strlen.c memset.c strcpy.c strdup.c strncpy.c
 
 all: build
 
 build: $(FILES)
-	$(CC) $(FILES)
+	$(CC) $(FLAGS) $(FILES)
