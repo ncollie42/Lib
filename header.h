@@ -10,5 +10,7 @@ char    *nc_strncpy(char *dst, const char *src, size_t len);
 char    *nc_strchr(const char *s, int c);
 int     nc_strcmp(const char *s1, const char *s2);
 int     nc_isdigit(int c);
+int     nc_toupper(int c);
+int     nc_tolower(int c);
 
 #endif

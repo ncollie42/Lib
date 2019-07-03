@@ -13,6 +13,6 @@ char *nc_strdup(const char *s1)
         perror("malloc failed");
         return dup;
     }
-    nc_strcpy(dup,s1);
+    nc_strncpy(dup,s1, size);
     return dup;
 }

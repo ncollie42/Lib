@@ -3,10 +3,16 @@
 #include <stdlib.h>
 int main(void)
 {
-    printf("%s\n", nc_isdigit('9') ? "yes" : "no");
-    printf("%s\n", nc_isdigit('a') ? "yes" : "no");
-    printf("%s\n", nc_isdigit('1') ? "yes" : "no");
-    printf("%s\n", nc_isdigit('4') ? "yes" : "no");
-    printf("%s\n", nc_isdigit('t') ? "yes" : "no");
-    printf("%s\n", nc_isdigit('0') ? "yes" : "no");
+   printf("%c\n", nc_toupper('a'));
+   printf("%c\n", nc_toupper('B'));
+   printf("%c\n", nc_toupper('c'));
+   printf("%c\n", nc_toupper('D'));
+   printf("%c\n", nc_toupper('E'));
+   printf("%c\n", nc_toupper('f'));
+   printf("%c\n", nc_tolower('a'));
+   printf("%c\n", nc_tolower('B'));
+   printf("%c\n", nc_tolower('c'));
+   printf("%c\n", nc_tolower('D'));
+   printf("%c\n", nc_tolower('E'));
+   printf("%c\n", nc_tolower('f'));
 }
