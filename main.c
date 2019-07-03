@@ -3,16 +3,10 @@
 #include <stdlib.h>
 int main(void)
 {
-    char src[] = "13x";
-   
-    char dst[4];
-    char dst2[4];
-
-    nc_memset(dst, '\0', sizeof(dst));
-    strncpy(dst, src, 5);
-    printf("1:\t%s\n", dst);
-
-    nc_memset(dst2, '\0', sizeof(dst2));
-    nc_strncpy(dst2, src, 2);
-    printf("2:\t%s\n", dst2);
+    printf("%s\n", nc_isdigit('9') ? "yes" : "no");
+    printf("%s\n", nc_isdigit('a') ? "yes" : "no");
+    printf("%s\n", nc_isdigit('1') ? "yes" : "no");
+    printf("%s\n", nc_isdigit('4') ? "yes" : "no");
+    printf("%s\n", nc_isdigit('t') ? "yes" : "no");
+    printf("%s\n", nc_isdigit('0') ? "yes" : "no");
 }
