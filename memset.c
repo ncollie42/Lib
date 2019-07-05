@@ -3,7 +3,7 @@
 void *nc_memset(void *b, int c, size_t len)
 {
     char *tmp;
-    int n;
+    size_t n;
     
     tmp = (char *)b;
     n = 0;

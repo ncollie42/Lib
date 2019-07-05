@@ -1,6 +1,6 @@
 CC = gcc
-FLAGS = -g
-LIBNAME = nc
+NAME = nc
+FLAGS = -Wall -Werror -Wextra
 FILES = strchr.c \
 	strcmp.c \
 	isdigit.c \
@@ -13,18 +13,24 @@ FILES = strchr.c \
 	strncpy.c
 OBJECTS = $(FILES:.c=.o)
 
-all: build
+all: $(NAME)
 
-build: $(FILES)
-	$(CC) $(FLAGS) $(FILES)
+$(NAME): $(OBJECTS)
+	ar rcs lib$(NAME).a $(OBJECTS)
 
-ob: $(FILES) 
-	$(CC) -c $(FILES)
-
-lib: ob
-	ar rcs lib$(LIBNAME).a $(OBJECTS)
+%.o: %.c
+	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
-	rm $(OBJECTS) lib$(LIBNAME).a
+	rm $(OBJECTS)
 
-re: clean lib
+fclean: clean
+	rm lib$(NAME).a
+
+re: fclean all
+
+# static: $(OBJECTS) 
+# 	ar rcs lib$(NAME).a $(OBJECTS)
+
+# shared:
+# 	gcc -o lib$(NAME).so -fpic -shared $(FILES)
