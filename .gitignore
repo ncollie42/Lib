@@ -10,3 +10,7 @@ a\.out\.dSYM/Contents/Info\.plist
 \._main\.c
 
 \._nc_header\.h
+
+\._nc_lib\.h
+
+buffers/\.vscode/settings\.json

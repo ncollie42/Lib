@@ -1,6 +1,7 @@
-#ifndef NC_HEADER_H
-#define NC_HEADER_H
+#ifndef NC_LIB_H
+#define NC_LIB_H
 #include <string.h>
+#include <stdlib.h>
 
 void    *nc_memset(void *b, int c, size_t len);
 size_t  nc_strlen(const char *s);
@@ -12,5 +13,6 @@ int     nc_strcmp(const char *s1, const char *s2);
 int     nc_isdigit(int c);
 int     nc_toupper(int c);
 int     nc_tolower(int c);
+void    *nc_malloc(size_t size);
 
 #endif

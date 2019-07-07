@@ -1,4 +1,4 @@
-#include "header.h"
+#include "nc_lib.h"
 
 char *nc_strncpy(char *dst, const char *src, size_t len)
 {

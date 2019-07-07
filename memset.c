@@ -1,4 +1,4 @@
-#include "header.h"
+#include "nc_lib.h"
 
 void *nc_memset(void *b, int c, size_t len)
 {

@@ -1,4 +1,4 @@
-#include "header.h"
+#include "nc_lib.h"
 
 size_t  nc_strlen(const char *s)
 {
