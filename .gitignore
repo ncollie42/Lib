@@ -14,3 +14,5 @@ a\.out\.dSYM/Contents/Info\.plist
 \._nc_lib\.h
 
 buffers/\.vscode/settings\.json
+
+buffers/libbuffer\.so

@@ -9,7 +9,9 @@ typedef struct dynamic_buffer {
     int size;
 } dynamic_buffer;
 
-dynamic_buffer *create_dynamic_buffer();
-dynamic_buffer *add_to_buffer(dynamic_buffer *buff, char *str, int size);
+dynamic_buffer  *create_dynamic_buffer();
+dynamic_buffer  *add_to_buffer(dynamic_buffer *buff, char *str, int size);
+void            debug_print_buffer(dynamic_buffer *buff);
+void            delete_dynamic_buffer(dynamic_buffer *buff);
 
 #endif
