@@ -32,5 +32,5 @@ re: fclean all
 # static: $(OBJECTS) 
 # 	ar rcs lib$(NAME).a $(OBJECTS)
 
-# shared:
-# 	gcc -o lib$(NAME).so -fpic -shared $(FILES)
+shared:
+	gcc -o lib$(NAME).so -fpic -shared $(FILES)

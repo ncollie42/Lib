@@ -1,4 +1,4 @@
-#include "header.h"
+#include "nc_header.h"
 #include <stdio.h>
 #include <stdlib.h>
 int main(void)

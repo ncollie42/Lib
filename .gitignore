@@ -6,3 +6,7 @@ a\.out\.dSYM/Contents/Info\.plist
 \.DS_Store
 
 \._\.DS_Store
+
+\._main\.c
+
+\._nc_header\.h

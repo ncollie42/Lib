@@ -1,5 +1,5 @@
-#ifndef HEADER_H
-#define HEADER_H
+#ifndef NC_HEADER_H
+#define NC_HEADER_H
 #include <string.h>
 
 void    *nc_memset(void *b, int c, size_t len);
