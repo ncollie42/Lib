@@ -11,7 +11,8 @@ FILES = strchr.c \
 	strcpy.c \
 	strdup.c \
 	strncpy.c \
-	malloc.c
+	malloc.c \
+	itoa.c
 OBJECTS = $(FILES:.c=.o)
 
 all: archive
@@ -31,4 +32,4 @@ fclean: clean
 re: fclean all
 
 shared:
-	gcc -o lib$(NAME).so -fpic -shared $(FILES)
+	gcc -o lib$(NAME).so -fpic -shared $(FILES) -g

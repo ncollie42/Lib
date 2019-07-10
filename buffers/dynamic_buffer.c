@@ -22,34 +22,47 @@ void    delete_dynamic_buffer(dynamic_buffer *buff)
     Will add contents to buffer, if not enough room it will create new
     and move everything over and return a new pointer to the new buffer.
  */
+int     get_new_size(int new, int old_limit)
+{
+    while (old_limit <= new)
+        old_limit *= 2;
+    return old_limit;
+}
+
 
 dynamic_buffer *add_to_buffer(dynamic_buffer *buff, char *str, int size)
 {
     char    *tmp;
     int     difference;
+    int     new_limit;
 
-    if ((buff->size + size) > buff->limit)
+    if ((buff->size + size) >= (buff->limit))
     {
-        if (!(tmp = nc_malloc(buff->limit * 2)))
+        new_limit = get_new_size(buff->size + size, buff->limit);
+        if (!(tmp = nc_malloc(new_limit + 1)))
             return NULL;
         nc_strncpy(tmp, buff->buffer, buff->size);
         difference = (buff->current_pos - buff->buffer);
-        printf("diff in pos: %d\n", difference);
         free(buff->buffer);
         buff->buffer = tmp;
         buff->current_pos = tmp + difference;
-        buff->limit *= 2;
-        
+        buff->limit = new_limit;
     }
-    nc_strncpy(buff->current_pos, str, size);
+    strncpy(buff->current_pos, str, size);
     buff->current_pos += size;
     buff->size += size;
+    
     return buff;
 }
 
 void    debug_print_buffer(dynamic_buffer *buff)
 {
-    printf("buffer: %s\ncurrent: %d\nsize: %d\nlimit: %d\n\n",
+    int n;
+
+    n = 0;
+    while(n < buff->limit)
+       printf("%d ", buff->buffer[n++]);
+    printf("\nbuffer: %s\ncurrent: %d\nsize: %d\nlimit: %d\n\n",
      buff->buffer,
       *buff->current_pos,
        buff->size,

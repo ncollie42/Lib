@@ -14,5 +14,5 @@ int     nc_isdigit(int c);
 int     nc_toupper(int c);
 int     nc_tolower(int c);
 void    *nc_malloc(size_t size);
-
+char    *nc_itoa(int n);
 #endif

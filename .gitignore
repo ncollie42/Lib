@@ -16,3 +16,7 @@ a\.out\.dSYM/Contents/Info\.plist
 buffers/\.vscode/settings\.json
 
 buffers/libbuffer\.so
+
+standard/libstandard\.so\.dSYM/Contents/Info\.plist
+
+*.so
