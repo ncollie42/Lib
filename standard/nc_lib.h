@@ -15,4 +15,7 @@ int     nc_toupper(int c);
 int     nc_tolower(int c);
 void    *nc_malloc(size_t size);
 char    *nc_itoa(int n);
+char    *nc_itoa_base(unsigned long number, int base);
+char    *nc_reverse(char *str);
+
 #endif

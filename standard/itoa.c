@@ -17,6 +17,7 @@ static int  get_size(int n)
     }
     return size;
 }
+
 char *nc_itoa(int n)
 {
     int sign;

@@ -12,7 +12,9 @@ FILES = strchr.c \
 	strdup.c \
 	strncpy.c \
 	malloc.c \
-	itoa.c
+	itoa.c \
+	reverse.c \
+	itoa_base.c
 OBJECTS = $(FILES:.c=.o)
 
 all: archive
