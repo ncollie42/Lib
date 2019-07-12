@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "nc_lib_buffer.h"
+#include <unistd.h>
 
 dynamic_buffer *create_dynamic_buffer()
 {
@@ -18,10 +19,12 @@ void    delete_dynamic_buffer(dynamic_buffer *buff)
     free(buff);
 }
 
-/*
-    Will add contents to buffer, if not enough room it will create new
-    and move everything over and return a new pointer to the new buffer.
- */
+int     print_buffer(dynamic_buffer *buff, int fd)
+{
+    write(fd, buff->buffer, buff->size);
+    return (buff->size);
+}
+
 int     get_new_size(int new, int old_limit)
 {
     while (old_limit <= new)
@@ -29,6 +32,11 @@ int     get_new_size(int new, int old_limit)
     return old_limit;
 }
 
+/*
+    Will add contents to buffer, if not enough room it will create new
+    and move everything over and return a new pointer to the new buffer.
+    Also Adds +1 to malloc just incase
+ */
 
 dynamic_buffer *add_to_buffer(dynamic_buffer *buff, char *str, int size)
 {
