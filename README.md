@@ -1,5 +1,5 @@
 # Lib
-Creating a library 
+Creating a standard library to be used in future projects (ls, printf ext...)
 
 Using this library as a .so 
 
