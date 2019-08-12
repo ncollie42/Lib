@@ -18,6 +18,7 @@ FILES = strchr.c \
 	memcpy.c \
 	lstaddsorted.c  \
 	lstdel.c \
+	lstAppend.c \
 	lstnew.c 
 OBJECTS = $(FILES:.c=.o)
 
