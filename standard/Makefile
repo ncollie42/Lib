@@ -14,7 +14,11 @@ FILES = strchr.c \
 	malloc.c \
 	itoa.c \
 	reverse.c \
-	itoa_base.c
+	itoa_base.c \
+	memcpy.c \
+	lstaddsorted.c  \
+	lstdel.c \
+	lstnew.c 
 OBJECTS = $(FILES:.c=.o)
 
 all: archive

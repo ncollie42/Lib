@@ -1,5 +1,5 @@
 CC = gcc
-FILES = dynamic_buffer.c 
+FILES = dynamic_buffer.c slice.c 
 FLAGS = -fpic -shared
 NAME = buffer
 LIB_LOCATION = $(DYLD_LIBRARY_PATH)
