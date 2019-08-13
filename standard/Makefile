@@ -19,6 +19,7 @@ FILES = strchr.c \
 	lstaddsorted.c  \
 	lstdel.c \
 	lstAppend.c \
+	strjoin.c \
 	lstnew.c 
 OBJECTS = $(FILES:.c=.o)
 

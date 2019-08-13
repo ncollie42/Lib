@@ -1,6 +1,6 @@
 #include "nc_lib.h"
 
-void    *nc_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void    *nc_memcpy(void *restrict dst, const void *restrict src, int n)
 {
     int index;
 

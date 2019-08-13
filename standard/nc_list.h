@@ -10,6 +10,7 @@ typedef struct		s_list
 }					t_list;
 
 t_list	*newNode(void *content);
+t_list	**makeListHead(void);
 void	lstdel(t_list **alst, void (*del)(void *));
 void	lstAddSorted(t_list **head, t_list *new, int (*check)(void *, void *));
 void	append(t_list **head, t_list *new);

@@ -20,3 +20,7 @@ buffers/libbuffer\.so
 standard/libstandard\.so\.dSYM/Contents/Info\.plist
 
 *.so
+
+buffers/libbuffer\.so\.dSYM/Contents/Info\.plist
+
+standard/libstandard\.a
