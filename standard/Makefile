@@ -18,6 +18,7 @@ FILES = strchr.c \
 	memcpy.c \
 	lstaddsorted.c  \
 	lstdel.c \
+	lstiter.c \
 	lstAppend.c \
 	strjoin.c \
 	lstnew.c 

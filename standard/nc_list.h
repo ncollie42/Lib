@@ -14,6 +14,6 @@ t_list	**makeListHead(void);
 void	lstdel(t_list **alst, void (*del)(void *));
 void	lstAddSorted(t_list **head, t_list *new, int (*check)(void *, void *));
 void	append(t_list **head, t_list *new);
-void	lstiter(t_list *lst, void (*f)(t_list *elem));
+void	lstIter(t_list **head, void (*f)(t_list *elem));
 
 #endif
