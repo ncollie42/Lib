@@ -19,5 +19,6 @@ void    *nc_malloc(size_t size);
 char    *nc_itoa(int n);
 char    *nc_itoa_base(unsigned long number, int base);
 char    *nc_reverse(char *str);
+void    *nc_memcpy(void *restrict dst, const void *restrict src, int n);
 
 #endif
