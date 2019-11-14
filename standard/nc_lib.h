@@ -20,5 +20,6 @@ char    *nc_itoa(int n);
 char    *nc_itoa_base(unsigned long number, int base);
 char    *nc_reverse(char *str);
 void    *nc_memcpy(void *restrict dst, const void *restrict src, int n);
-
+char	*nc_strndup(const char *s1, size_t n);
+char		**nc_strsplit(char const *s, char c);
 #endif

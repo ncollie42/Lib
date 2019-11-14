@@ -6,7 +6,6 @@ void append(t_list **head, t_list *new)
     if (!*head)
     {
         *head = new;
-    //static pointer ? faster? --> set static pointer here - *reset*
         return;
     }
     tmp = *head;

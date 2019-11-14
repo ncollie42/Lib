@@ -21,7 +21,9 @@ FILES = strchr.c \
 	lstiter.c \
 	lstAppend.c \
 	strjoin.c \
-	lstnew.c 
+	lstnew.c \
+	strndup.c \
+	strsplit.c 
 OBJECTS = $(FILES:.c=.o)
 
 all: archive
