@@ -6,7 +6,7 @@
 /*   By: ncollie <ncollie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/10 19:27:28 by ncollie           #+#    #+#             */
-/*   Updated: 2018/12/08 17:30:32 by ncollie          ###   ########.fr       */
+/*   Updated: 2019/11/19 23:53:35 by ncollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,10 +69,10 @@ char				*ft_strnstr(const char *haystack, const char *s2, size_t n);
 int					ft_atoi(const char *str);
 int					ft_isascii(int c);
 int					ft_isprint(int c);
-void					ft_memdel(void **ap);
+void				ft_memdel(void **ap);
 void				*ft_memalloc(size_t size);
 void				ft_strclr(char *s);
-int						ft_strnequ(const char *s1, const char *s2, size_t n);
+int					ft_strnequ(const char *s1, const char *s2, size_t n);
 int					ft_strequ(char const *s1, char const *s2);
 void				ft_putnbr(int n);
 char				*ft_strtrim(char const *s);

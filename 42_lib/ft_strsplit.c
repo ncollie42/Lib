@@ -6,7 +6,7 @@
 /*   By: ncollie <ncollie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/25 20:39:51 by ncollie           #+#    #+#             */
-/*   Updated: 2019/08/28 13:27:30 by ncollie          ###   ########.fr       */
+/*   Updated: 2019/11/13 19:09:02 by ncollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ char		**ft_strsplit(char const *s, char c)
 		if (s[i] != c)
 		{
 			length = ft_word_length(s, c, i);
-			if (!(result[index] = nc_strndup(s + i, length)))
+			if (!(result[index] = ft_strndup(s + i, length)))
 				return (NULL);
 			index++;
 			i += length;
